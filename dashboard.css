@@ -1,0 +1,175 @@
+/* Base Styles */
+:root {
+  --primary-color: #477166;
+  --secondary-color: #2ecc71;
+  --accent-color: #0bdaae;
+  --text-color: #333;
+  --light-bg: #f8f9fa;
+  --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --hover-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --transition: all 0.2s ease;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background-color: var(--light-bg);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+/* Header Styles */
+.header {
+  background-color: #477166;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.logo .highlight {
+  color: #2ecc71;
+}
+
+.navbar {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar a {
+  font-size: 18px;
+  padding: 8px;
+  transition: color 0.3s;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar a:hover {
+  color: #0bdaae;
+}
+
+/* Categories */
+.popular-list {
+  margin: 30px 20px 10px;
+  font-size: 18px;
+}
+
+.popular-list ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.popular-list ul li a {
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.popular-list ul li a:hover,
+.popular-list ul li a.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Section Header */
+.Content-joblistHeader-tRn {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+/* Project Cards */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  padding: 20px;
+  transition: transform 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.project-card p {
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.project-card button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.project-card button:hover {
+  background-color: #0056b3;
+}
+
+/* Dashboard Section */
+.dashboard-section {
+  margin: 40px 20px;
+}
+
+.dashboard-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.dashboard-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #fff;
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+  border-top: 1px solid #eee;
+}
